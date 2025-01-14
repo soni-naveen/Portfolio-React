@@ -8,25 +8,25 @@ export default function Navbar() {
           {/* Navigation Links */}
           <div className="font-poppins text-[13px] sm:text-base space-x-4 sm:flex sm:space-x-6">
             <a
-              href="#"
+              href="https://naveensoni.netlify.app/#skills"
               className="text-white relative after:content-[''] after:block after:h-[1px] after:absolute after:left-0 after:w-0 after:bg-white after:transition-all after:duration-300 after:ease-linear hover:after:w-full hover:after:left-0"
             >
               Skills
             </a>
             <a
-              href="#about"
+              href="https://naveensoni.netlify.app/#projects"
               className="text-white relative after:content-[''] after:block after:h-[1px] after:absolute after:left-0 after:w-0 after:bg-white after:transition-all after:duration-300 after:ease-linear hover:after:w-full hover:after:left-0"
             >
               Projects
             </a>
             <a
-              href="#services"
+              href="https://naveensoni.netlify.app/#education"
               className="text-white relative after:content-[''] after:block after:h-[1px] after:absolute after:left-0 after:w-0 after:bg-white after:transition-all after:duration-300 after:ease-linear hover:after:w-full hover:after:left-0"
             >
               Education
             </a>
             <a
-              href="#contact"
+              href="https://naveensoni.netlify.app/#contact"
               className="text-white relative after:content-[''] after:block after:h-[1px] after:absolute after:left-0 after:w-0 after:bg-white after:transition-all after:duration-300 after:ease-linear hover:after:w-full hover:after:left-0"
             >
               Contact
