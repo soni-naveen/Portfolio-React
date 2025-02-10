@@ -44,7 +44,7 @@ export default function Contact() {
   return (
     <div className="flex flex-col-reverse lg:flex-row items-center justify-around">
       <div className="w-fit my-20">
-        <h1 className="font-poppins font-medium text-clamp1 text-white mb-10">
+        <h1 className="font-poppins font-bold text-clamp1 text-white mb-10">
           <ShinyText
             text="Let's Work Together"
             disabled={false}
@@ -93,7 +93,7 @@ export default function Contact() {
         </form>
       </div>
       <div>
-        <img src={contact} alt="contact" className="h-[250px] xs:h-[300px] sm:h-[360px] xl:h-[400px] opacity-80" />
+        <img src={contact} alt="contact" className="h-[250px] xs:h-[300px] sm:h-[360px] xl:h-[400px]" />
       </div>
     </div>
   );

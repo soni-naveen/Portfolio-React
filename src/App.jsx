@@ -8,6 +8,9 @@ import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Aboutme from "./components/Aboutme";
 
 export default function App() {
   const [loading, setLoading] = useState(true);
@@ -34,7 +37,12 @@ export default function App() {
         >
           <Navbar />
           <Intro />
+          <Skills />
+          <Projects />
+          <Aboutme />
           <Contact />
+
+          {/*=========== FOOTER LINKS ===========*/}
           <div className="h-[1px] bg-white/30 w-[90%] mx-auto mb-5" />
           <div className="text-gray-400 flex justify-center items-center gap-5 mb-7">
             <a href="https://www.linkedin.com/in/soni-naveen" target="_blank">
