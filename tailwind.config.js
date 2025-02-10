@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       screens: {
-        xs: { min: "400px", max: "639px" },
+        xxs: { min: "350px", max: "400px" },
+        xs: { min: "401px", max: "639px" },
       },
       fontFamily: {
         poppins: ['"Poppins"', "serif"],
@@ -25,7 +26,7 @@ export default {
         italic: "italic",
       },
       fontSize: {
-        clamp1: "clamp(2rem, 4vw, 3.5rem)",
+        clamp1: "clamp(1.6rem, 3.8vw, 3rem)",
         clamp2: "clamp(1.2rem, 2vw, 1.5rem)",
       },
       backgroundImage: {

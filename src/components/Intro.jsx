@@ -1,6 +1,6 @@
 import React from "react";
 import Naveenphoto from "../assets/naveensoni.png";
-import Resume from "../assets/Naveen_Resume.pdf";
+import Resume from "../assets/Naveen_Resume_New.pdf";
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
@@ -10,10 +10,10 @@ import { MdOutlineFileDownload } from "react-icons/md";
 export default function Intro() {
   return (
     <>
-      <div className="mt-2 lg:mt-10 flex flex-col lg:flex-row items-center justify-evenly xs:mx-[2%]">
+      <div className="mt-6 lg:mt-10 flex flex-col lg:flex-row items-center justify-evenly xs:mx-[2%]">
         <div>
           <svg
-            className="h-[20rem] xs:h-[24rem] sm:h-[32rem] lg:h-[35rem]"
+            className="h-[20rem] xs:h-[23rem] sm:h-[26rem] lg:h-[32rem] xl:h-[35rem]"
             id="sw-js-blob-svg"
             viewBox="0 0 100 100"
             xmlns="http://www.w3.org/2000/svg"
@@ -47,13 +47,13 @@ export default function Intro() {
                 style={{ transition: "all 0.3s ease 0s" }}
                 stroke="url(#sw-gradient)"
               />
-              <image x="10" y="20" className="h-[75px]" href={Naveenphoto} />
+              <image x="10" y="18" className="h-[75px]" href={Naveenphoto} />
             </g>
           </svg>
         </div>
         <div>
-          <p className="text-white text-center font-poppins text-clamp1 font-bold tracking-wide mb-5 sm:mb-10">
-            MERN STACK DEVELOPER
+          <p className="text-white text-center font-poppins px-3 text-clamp1 font-bold tracking-wide mb-5 sm:mb-7">
+            Hi, I'm Naveen Soni <br /> MERN Stack Developer
           </p>
           <p className="text-white font-poppins text-center text-clamp2 mb-5">
             Connect with me!
@@ -73,8 +73,8 @@ export default function Intro() {
             </a>
           </div>
           <a href={Resume} download>
-            <button className="group text-gray-300 mx-auto font-poppins flex gap-2 border-2 border-gray-400 rounded-full text-sm sm:text-base px-4 py-2 sm:px-5 sm:py-3 hover:text-white duration-300 hover:drop-shadow-my">
-              <MdOutlineFileDownload className="text-gray-300 text-xl sm:text-2xl group-hover:text-white" />
+            <button className="group text-gray-300 mx-auto font-poppins flex gap-2 border-2 border-gray-400 rounded-full text-sm sm:text-base px-4 py-2 md:px-5 md:py-3 hover:text-white duration-300 hover:drop-shadow-my">
+              <MdOutlineFileDownload className="text-gray-300 text-xl md:text-2xl group-hover:text-white" />
               Resume
             </button>
           </a>
