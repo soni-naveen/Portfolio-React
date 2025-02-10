@@ -72,7 +72,7 @@ export default function Intro() {
               <FaXTwitter className="text-xl sm:text-2xl hover:cursor-pointer hover:drop-shadow-my hover:text-white" />
             </a>
           </div>
-          <a href={Resume} download="Naveen_Resume">
+          <a href={Resume} download>
             <button className="group text-gray-300 mx-auto font-poppins flex gap-2 border-2 border-gray-400 rounded-full text-sm sm:text-base px-4 py-2 sm:px-5 sm:py-3 hover:text-white duration-300 hover:drop-shadow-my">
               <MdOutlineFileDownload className="text-gray-300 text-xl sm:text-2xl group-hover:text-white" />
               Resume

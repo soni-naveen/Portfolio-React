@@ -6,7 +6,7 @@ export default function Navbar() {
       <div className="w-fit mx-auto px-7 sm:px-10 rounded-full backdrop-blur-[30px] shadow-[0px_0px_15px_0_rgba(227,228,237,0.37)]">
         <div className="flex justify-center items-center h-12 sm:h-16">
           {/* Navigation Links */}
-          <div className="font-poppins text-[13px] sm:text-base space-x-4 sm:flex sm:space-x-6">
+          <div className="font-poppins text-[13px] sm:text-base space-x-4 sm:flex sm:space-x-14">
             <a
               href="https://naveensoni.netlify.app/#skills"
               className="text-white relative after:content-[''] after:block after:h-[1px] after:absolute after:left-0 after:w-0 after:bg-white after:transition-all after:duration-300 after:ease-linear hover:after:w-full hover:after:left-0"
