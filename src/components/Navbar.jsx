@@ -1,6 +1,24 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 export default function Navbar() {
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY) {
+        setIsVisible(false); // Hide navbar when scrolling down
+      } else {
+        setIsVisible(true); // Show navbar when scrolling up
+      }
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
+
   const navLinks = [
     { name: "Skills", href: "https://naveensoni.netlify.app/#skills" },
     { name: "Projects", href: "https://naveensoni.netlify.app/#projects" },
@@ -9,9 +27,13 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="sticky top-5">
-      <div className="w-fit mx-auto px-7 sm:px-10 rounded-full backdrop-blur-[30px] shadow-[0px_0px_15px_0_rgba(227,228,237,0.3)]">
-        <div className="flex justify-center items-center h-10 sm:h-12 md:h-14 lg:h-16">
+    <nav
+      className={`sticky z-50 top-5 transition-all duration-500 ${
+      isVisible ? "top-5" : "-top-14"
+      }`}
+    >
+      <div className="w-fit mx-auto px-7 xs:px-10 sm:px-14 rounded-full bg-gray-700/20 backdrop-blur-2xl shadow-[0px_0px_7px_0_rgba(227,228,237,0.3)]">
+        <div className="flex justify-center items-center h-10 sm:h-12 md:h-14">
           {/* Navigation Links */}
           <div className="font-poppins text-[11px] xxs:text-xs sm:text-sm lg:text-base space-x-4 xxs:space-x-6 xs:space-x-8 sm:flex sm:space-x-10 lg:space-x-14">
             {navLinks.map((link, index) => (

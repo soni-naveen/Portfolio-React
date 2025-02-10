@@ -6,6 +6,7 @@ import { FaLinkedin } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { MdOutlineFileDownload } from "react-icons/md";
+import SplitText from "./ui/SplitText";
 
 export default function Intro() {
   return (
@@ -52,9 +53,18 @@ export default function Intro() {
           </svg>
         </div>
         <div>
-          <p className="text-white text-center font-poppins px-3 text-clamp1 font-bold tracking-wide mb-5 sm:mb-7">
-            Hi, I'm Naveen Soni <br /> MERN Stack Developer
-          </p>
+          <div className="text-white text-center font-poppins px-3 text-clamp1 font-medium tracking-wide mb-5 sm:mb-7">
+            Hi, I'm <span className="font-bold">NAVEEN SONI</span> <br />{" "}
+            <SplitText
+              text="MERN Stack Developer"
+              delay={100}
+              animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
+              animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
+              easing="easeOutCubic"
+              threshold={0.2}
+              rootMargin="-50px"
+            />
+          </div>
           <p className="text-white font-poppins text-center text-clamp2 mb-5">
             Connect with me!
           </p>
@@ -72,7 +82,7 @@ export default function Intro() {
               <FaXTwitter className="text-xl sm:text-2xl hover:cursor-pointer hover:drop-shadow-my hover:text-white" />
             </a>
           </div>
-          <a href={Resume} download>
+          <a href={Resume}>
             <button className="group text-gray-300 mx-auto font-poppins flex gap-2 border-2 border-gray-400 rounded-full text-sm sm:text-base px-4 py-2 md:px-5 md:py-3 hover:text-white duration-300 hover:drop-shadow-my">
               <MdOutlineFileDownload className="text-gray-300 text-xl md:text-2xl group-hover:text-white" />
               Resume

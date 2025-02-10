@@ -3,6 +3,15 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      keyframes: {
+        shine: {
+          "0%": { "background-position": "100%" },
+          "100%": { "background-position": "-100%" },
+        },
+      },
+      animation: {
+        shine: "shine 5s linear infinite",
+      },
       screens: {
         xxs: { min: "350px", max: "400px" },
         xs: { min: "401px", max: "639px" },
