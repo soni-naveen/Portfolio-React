@@ -43,7 +43,7 @@ export default function Contact() {
 
   return (
     <div className="flex flex-col-reverse lg:flex-row items-center justify-around">
-      <div className="w-fit my-20">
+      <div className="w-fit mb-20">
         <h1 className="font-poppins font-bold text-clamp1 text-white mb-14">
           <AnimatedContent
             distance={150}

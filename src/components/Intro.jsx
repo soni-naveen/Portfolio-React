@@ -57,7 +57,7 @@ export default function Intro() {
             Hi, I'm <span className="font-bold">NAVEEN SONI</span> <br />{" "}
             <BlurText
               text="MERN Stack Developer"
-              delay={150}
+              delay={200}
               animateBy="words"
               direction="top"
             />
