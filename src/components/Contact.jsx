@@ -81,7 +81,7 @@ export default function Contact() {
             name="Name"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="w-[calc(100vw-70px)] xs:w-[calc(100vw-100px)] sm:w-[500px] bg-white/10 backdrop-blur-xl py-3 md:py-4 px-5 outline-none rounded text-white placeholder:text-white/30"
+            className="w-[calc(100vw-70px)] xs:w-[calc(100vw-100px)] sm:w-[500px] bg-gray-700/50 backdrop-blur-xl py-3 md:py-4 px-5 outline-none rounded text-white placeholder:text-white/30"
           />
           <input
             required
@@ -90,7 +90,7 @@ export default function Contact() {
             name="E-mail"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="w-[calc(100vw-70px)] xs:w-[calc(100vw-100px)] sm:w-[500px] bg-white/10 backdrop-blur-xl py-3 md:py-4 px-5 outline-none rounded text-white placeholder:text-white/30"
+            className="w-[calc(100vw-70px)] xs:w-[calc(100vw-100px)] sm:w-[500px] bg-gray-700/50 backdrop-blur-xl py-3 md:py-4 px-5 outline-none rounded text-white placeholder:text-white/30"
           />
           <textarea
             required
@@ -99,7 +99,7 @@ export default function Contact() {
             name="Message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            className="w-[calc(100vw-70px)] xs:w-[calc(100vw-100px)] sm:w-[500px] bg-white/10 backdrop-blur-xl py-3 md:py-4 px-5 outline-none rounded resize-none text-white placeholder:text-white/30"
+            className="w-[calc(100vw-70px)] xs:w-[calc(100vw-100px)] sm:w-[500px] bg-gray-700/50 backdrop-blur-xl py-3 md:py-4 px-5 outline-none rounded resize-none text-white placeholder:text-white/30"
           ></textarea>
           <button
             type="submit"

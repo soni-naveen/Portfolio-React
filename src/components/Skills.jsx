@@ -84,7 +84,7 @@ export default function Skills() {
                 className="w-36 min-w-fit h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 sm:m-5 rounded-lg group relative hover:scale-[1.1] cursor-pointer"
                 key={id}
               >
-                <div className="h-full rounded-lg border border-indigo-700/30 bg-indigo-950/70 backdrop-blur-sm shadow-none shadow-gray-50 group-hover:border-indigo-300/40 transition-all duration-500">
+                <div className="h-full rounded-lg border border-indigo-700/30 bg-indigo-950/90 backdrop-blur-sm shadow-none shadow-gray-50 group-hover:border-indigo-300/40 transition-all duration-500">
                   <div className="flex -translate-y-[1px] justify-center">
                     <div className="w-3/4">
                       <div className="h-[2px] w-full bg-gradient-to-r from-transparent via-indigo-500 to-transparent" />
