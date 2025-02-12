@@ -21,8 +21,8 @@ export default function Intro() {
           >
             <defs>
               <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
-                <stop id="stop1" stopColor="rgba(25, 10, 50)" offset="0%" />
-                <stop id="stop2" stopColor="rgba(45, 10, 100)" offset="100%" />
+                <stop id="stop1" stopColor="rgba(60, 10, 50)" offset="0%" />
+                <stop id="stop2" stopColor="rgba(40, 40, 100)" offset="100%" />
               </linearGradient>
             </defs>
             <mask id="mask1" mask-type="alpha">

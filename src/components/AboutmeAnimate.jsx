@@ -6,7 +6,7 @@ const AboutmeAnimate = () => {
   return (
     <Lottie
       animationData={Animation}
-      className="mt-5 h-60 w-60 sm:h-72 sm:w-72 md:h-[300px] md:w-[300px] lg:w-[400px] lg:h-[400px] xl:h-[500px] xl:w-[500px]"
+      className="mt-5 md:-ml-12 lg:-ml-14 xl:-ml-20 md:h-[400px] md:w-[400px] lg:w-[500px] lg:h-[500px] xl:h-[600px] xl:w-[600px]"
     />
   );
 };

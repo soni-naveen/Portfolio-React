@@ -7,7 +7,7 @@ export default function Projects() {
       <div className="w-[80%] mx-auto">
         <h1 className="text-clamp3 font-bold font-poppins text-white">
           <AnimatedContent
-            distance={200}
+            distance={150}
             direction="horizontal"
             reverse={false}
             config={{ tension: 80, friction: 20 }}
@@ -19,7 +19,7 @@ export default function Projects() {
             <div>Projects</div>
           </AnimatedContent>
           <AnimatedContent
-            distance={300}
+            distance={200}
             direction="horizontal"
             reverse={false}
             config={{ tension: 80, friction: 20 }}

@@ -39,9 +39,6 @@ export default {
         clamp2: "clamp(1.2rem, 2vw, 1.5rem)",
         clamp3: "clamp(2rem, 3.8vw, 2.5rem)",
       },
-      backgroundImage: {
-        background: "url('assets/background.svg')",
-      },
       dropShadow: {
         my: "0 0 15px rgba(255, 255, 255, 0.8)",
       },
