@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BsArrowRightCircleFill } from "react-icons/bs";
 import { toast } from "react-hot-toast";
-import ShinyText from "./ui/ShinyText";
+import AnimatedContent from "./ui/Animate";
 import contact from "../assets/contact.svg";
 
 export default function Contact() {
@@ -44,13 +44,20 @@ export default function Contact() {
   return (
     <div className="flex flex-col-reverse lg:flex-row items-center justify-around">
       <div className="w-fit my-20">
-        <h1 className="font-poppins font-bold text-clamp1 text-white mb-10">
-          <ShinyText
-            text="Let's Work Together"
-            disabled={false}
-            speed={3}
-            className="custom-class"
-          />
+        <h1 className="font-poppins font-bold text-clamp1 text-white mb-14">
+          Let's Work Together
+          <AnimatedContent
+            distance={300}
+            direction="horizontal"
+            reverse={false}
+            config={{ tension: 80, friction: 20 }}
+            initialOpacity={0.2}
+            animateOpacity
+            scale={1.1}
+            threshold={0.2}
+          >
+            <div className="h-2 rounded-full w-[2em] bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500" />
+          </AnimatedContent>
         </h1>
         <form
           onSubmit={handleSubmit}
@@ -93,7 +100,11 @@ export default function Contact() {
         </form>
       </div>
       <div>
-        <img src={contact} alt="contact" className="h-[250px] xs:h-[300px] sm:h-[360px] xl:h-[400px]" />
+        <img
+          src={contact}
+          alt="contact"
+          className="h-[250px] xs:h-[300px] sm:h-[360px] xl:h-[400px]"
+        />
       </div>
     </div>
   );

@@ -37,6 +37,7 @@ export default {
       fontSize: {
         clamp1: "clamp(1.6rem, 3.8vw, 3rem)",
         clamp2: "clamp(1.2rem, 2vw, 1.5rem)",
+        clamp3: "clamp(2rem, 3.8vw, 2.5rem)",
       },
       backgroundImage: {
         background: "url('assets/background.svg')",

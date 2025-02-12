@@ -6,7 +6,7 @@ import { FaLinkedin } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { MdOutlineFileDownload } from "react-icons/md";
-import SplitText from "./ui/SplitText";
+import BlurText from "./ui/BlurText";
 
 export default function Intro() {
   return (
@@ -55,14 +55,11 @@ export default function Intro() {
         <div>
           <div className="text-white text-center font-poppins px-3 text-clamp1 font-medium tracking-wide mb-5 sm:mb-7">
             Hi, I'm <span className="font-bold">NAVEEN SONI</span> <br />{" "}
-            <SplitText
+            <BlurText
               text="MERN Stack Developer"
-              delay={100}
-              animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
-              animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
-              easing="easeOutCubic"
-              threshold={0.2}
-              rootMargin="-50px"
+              delay={150}
+              animateBy="words"
+              direction="top"
             />
           </div>
           <p className="text-white font-poppins text-center text-clamp2 mb-5">
