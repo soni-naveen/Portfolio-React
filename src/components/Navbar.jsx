@@ -20,10 +20,10 @@ export default function Navbar() {
   }, [lastScrollY]);
 
   const navLinks = [
-    { name: "Skills", href: "https://naveensoni.netlify.app/#skills" },
-    { name: "Projects", href: "https://naveensoni.netlify.app/#projects" },
-    { name: "Education", href: "https://naveensoni.netlify.app/#education" },
-    { name: "Contact", href: "https://naveensoni.netlify.app/#contact" },
+    { name: "Skills", href: "#skills" },
+    { name: "Projects", href: "#projects" },
+    { name: "About", href: "#about" },
+    { name: "Contact", href: "#contact" },
   ];
 
   return (
