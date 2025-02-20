@@ -1,12 +1,9 @@
 import React from "react";
 import Naveenphoto from "../assets/naveensoni.png";
 import Resume from "../assets/Naveen_Resume_New.pdf";
-import { FaGithub } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa6";
-import { FaXTwitter } from "react-icons/fa6";
 import { MdOutlineFileDownload } from "react-icons/md";
 import BlurText from "./ui/BlurText";
+import SocialLinks from "./SocialLinks";
 
 export default function Intro() {
   return (
@@ -65,19 +62,8 @@ export default function Intro() {
           <p className="text-white font-poppins text-center text-clamp2 mb-5">
             Connect with me!
           </p>
-          <div className="text-gray-400 flex justify-center items-center gap-5 mb-7 sm:mb-10">
-            <a href="https://www.linkedin.com/in/soni-naveen" target="_blank">
-              <FaLinkedin className="text-xl sm:text-2xl hover:cursor-pointer hover:drop-shadow-my hover:text-white" />
-            </a>
-            <a href="https://www.instagram.com/naveenn.soni" target="_blank">
-              <FaInstagram className="text-xl sm:text-2xl hover:cursor-pointer hover:drop-shadow-my hover:text-white" />
-            </a>
-            <a href="https://github.com/soni-naveen" target="_blank">
-              <FaGithub className="text-xl sm:text-2xl hover:cursor-pointer hover:drop-shadow-my hover:text-white" />
-            </a>
-            <a href="https://twitter.com/naveennsoni" target="_blank">
-              <FaXTwitter className="text-xl sm:text-2xl hover:cursor-pointer hover:drop-shadow-my hover:text-white" />
-            </a>
+          <div className="mb-7 sm:mb-10">
+            <SocialLinks />
           </div>
           <a href={Resume}>
             <button className="group text-gray-300 mx-auto font-poppins flex gap-2 border-2 border-gray-400 rounded-full text-sm sm:text-base px-4 py-2 md:px-5 md:py-3 hover:text-white duration-300 hover:drop-shadow-my">
