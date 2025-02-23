@@ -1,5 +1,4 @@
 import React from "react";
-import AnimatedContent from "../components/ui/Animate";
 import Marquee from "react-fast-marquee";
 import html from "../assets/skills/html.svg";
 import css from "../assets/skills/css.svg";
@@ -41,30 +40,8 @@ export default function Skills() {
   return (
     <div className="my-20">
       <h1 className="w-[80%] mx-auto text-clamp3 font-poppins font-bold text-white">
-        <AnimatedContent
-          distance={150}
-          direction="horizontal"
-          reverse={false}
-          config={{ tension: 80, friction: 20 }}
-          initialOpacity={0.2}
-          animateOpacity
-          scale={1.1}
-          threshold={0.2}
-        >
-          <div>Skills</div>
-        </AnimatedContent>
-        <AnimatedContent
-          distance={200}
-          direction="horizontal"
-          reverse={false}
-          config={{ tension: 80, friction: 20 }}
-          initialOpacity={0.2}
-          animateOpacity
-          scale={1.1}
-          threshold={0.2}
-        >
-          <div className="h-2 rounded-full w-[2em] bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500" />
-        </AnimatedContent>
+        <div>Skills</div>
+        <div className="h-2 rounded-full w-[2em] bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500" />
       </h1>
       <div className="relative w-[90%] sm:w-[80%] mx-auto z-20 border-[#25213b]">
         <div className="w-full my-14">

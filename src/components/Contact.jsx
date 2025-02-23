@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { BsArrowRightCircleFill } from "react-icons/bs";
 import { toast } from "react-hot-toast";
-import AnimatedContent from "./ui/Animate";
 import contact from "../assets/contact.svg";
 
 export default function Contact() {
@@ -42,33 +41,14 @@ export default function Contact() {
   };
 
   return (
-    <div className="flex flex-col-reverse gap-14 lg:gap-0 lg:flex-row items-center justify-around">
+    <div
+      id="contact"
+      className="flex flex-col-reverse gap-14 lg:gap-0 lg:flex-row items-center justify-around"
+    >
       <div className="w-fit mb-20">
         <h1 className="font-poppins font-bold text-clamp3 text-white mb-14">
-          <AnimatedContent
-            distance={150}
-            direction="horizontal"
-            reverse={false}
-            config={{ tension: 80, friction: 20 }}
-            initialOpacity={0.2}
-            animateOpacity
-            scale={1.1}
-            threshold={0.2}
-          >
-            <div>Let's Work Together</div>
-          </AnimatedContent>
-          <AnimatedContent
-            distance={200}
-            direction="horizontal"
-            reverse={false}
-            config={{ tension: 80, friction: 20 }}
-            initialOpacity={0.2}
-            animateOpacity
-            scale={1.1}
-            threshold={0.2}
-          >
-            <div className="h-2 rounded-full w-[2em] bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500" />
-          </AnimatedContent>
+          <div>Let's Work Together</div>
+          <div className="h-2 rounded-full w-[2em] bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500" />
         </h1>
         <form
           onSubmit={handleSubmit}

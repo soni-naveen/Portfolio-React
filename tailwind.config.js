@@ -9,12 +9,12 @@ export default {
           "100%": { "background-position": "-100%" },
         },
       },
+      screens: {
+        xxs: "350px",
+        xs: "401px",
+      },
       animation: {
         shine: "shine 5s linear infinite",
-      },
-      screens: {
-        xxs: { min: "350px", max: "400px" },
-        xs: { min: "401px", max: "639px" },
       },
       fontFamily: {
         poppins: ['"Poppins"', "serif"],

@@ -8,7 +8,7 @@ import SocialLinks from "./SocialLinks";
 export default function Intro() {
   return (
     <>
-      <div className="my-6 lg:mt-10 flex flex-col lg:flex-row items-center justify-evenly xs:mx-[2%]">
+      <div className="my-6 lg:mt-10 flex flex-col lg:flex-row items-center justify-evenly xs:mx-[2%] sm:mx-0">
         <div>
           <svg
             className="h-[20rem] xs:h-[23rem] sm:h-[26rem] lg:h-[32rem] xl:h-[35rem]"
@@ -54,7 +54,7 @@ export default function Intro() {
             Hi, I'm <span className="font-bold">NAVEEN SONI</span> <br />{" "}
             <BlurText
               text="MERN Stack Developer"
-              delay={200}
+              delay={300}
               animateBy="words"
               direction="top"
             />
