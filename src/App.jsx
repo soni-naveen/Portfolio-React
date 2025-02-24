@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import Loader from "./components/Loader";
 import Navbar from "./components/Navbar";
@@ -8,8 +9,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Aboutme from "./components/Aboutme";
 import background from "./assets/background.svg";
-import SocialLinks from "./components/SocialLinks";
-import { useNavigate, useLocation } from "react-router-dom";
+import Footer from "./components/Footer";
 
 function HashRedirect() {
   const location = useLocation();
@@ -55,35 +55,30 @@ export default function App() {
         backgroundAttachment: "fixed",
       }}
     >
-      {loading ? (
+      {/* {loading ? (
         <div className="flex justify-center items-center bg-black min-h-screen">
           <Loader />
         </div>
-      ) : (
-        <>
-          <Navbar />
-          <ScrollToTop />
-          <HashRedirect />
-          <motion.div
-            initial={{ y: 100, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.8, ease: "easeOut" }}
-            className="min-h-screen backdrop-blur-[2px]"
-          >
-            <Intro />
-            <Skills />
-            <Projects />
-            <Aboutme />
-            <Contact />
-            {/*=========== FOOTER LINKS ===========*/}
-            <div className="h-[1px] bg-white/30 w-[90%] mx-auto mb-5" />
-            <div className="mb-7">
-              {/* <p>Made by Me</p> */}
-              <SocialLinks />
-            </div>
-          </motion.div>
-        </>
-      )}
+      ) : ( */}
+      <>
+        <Navbar />
+        <ScrollToTop />
+        <HashRedirect />
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="min-h-screen backdrop-blur-[2px]"
+        >
+          <Intro />
+          <Skills />
+          <Projects />
+          <Aboutme />
+          <Contact />
+          <Footer />
+        </motion.div>
+      </>
+      {/* )} */}
     </div>
   );
 }

@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import { BsArrowRightCircleFill } from "react-icons/bs";
 import { toast } from "react-hot-toast";
-import contact from "../assets/contact.svg";
+import { FaGithub } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
+import { SiGmail } from "react-icons/si";
+import ShinyText from "../components/ui/ShinyText";
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -43,11 +47,16 @@ export default function Contact() {
   return (
     <div
       id="contact"
-      className="flex flex-col-reverse gap-14 lg:gap-0 lg:flex-row items-center justify-around"
+      className="flex flex-col gap-10 lg:gap-0 lg:flex-row items-center justify-around 2xl:w-[90%] mx-auto"
     >
-      <div className="w-fit mb-20">
+      <div className="w-fit lg:mb-20">
         <h1 className="font-poppins font-bold text-clamp3 text-white mb-14">
-          <div>Let's Work Together</div>
+          <ShinyText
+            text="Let's Work Together"
+            disabled={false}
+            speed={3}
+            className="custom-class"
+          />
           <div className="h-2 rounded-full w-[2em] bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500" />
         </h1>
         <form
@@ -61,7 +70,7 @@ export default function Contact() {
             name="Name"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="w-[calc(100vw-70px)] xs:w-[calc(100vw-100px)] sm:w-[500px] bg-gray-700/50 backdrop-blur-xl py-3 md:py-4 px-5 outline-none rounded text-white placeholder:text-white/30"
+            className="w-[calc(100vw-70px)] xs:w-[calc(100vw-100px)] sm:w-[500px] bg-gray-700/50 backdrop-blur-xl py-3 md:py-4 px-4 outline-none rounded text-white placeholder:text-white/30"
           />
           <input
             required
@@ -70,7 +79,7 @@ export default function Contact() {
             name="E-mail"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="w-[calc(100vw-70px)] xs:w-[calc(100vw-100px)] sm:w-[500px] bg-gray-700/50 backdrop-blur-xl py-3 md:py-4 px-5 outline-none rounded text-white placeholder:text-white/30"
+            className="w-[calc(100vw-70px)] xs:w-[calc(100vw-100px)] sm:w-[500px] bg-gray-700/50 backdrop-blur-xl py-3 md:py-4 px-4 outline-none rounded text-white placeholder:text-white/30"
           />
           <textarea
             required
@@ -79,23 +88,50 @@ export default function Contact() {
             name="Message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            className="w-[calc(100vw-70px)] xs:w-[calc(100vw-100px)] sm:w-[500px] bg-gray-700/50 backdrop-blur-xl py-3 md:py-4 px-5 outline-none rounded resize-none text-white placeholder:text-white/30"
+            className="w-[calc(100vw-70px)] xs:w-[calc(100vw-100px)] sm:w-[500px] bg-gray-700/50 backdrop-blur-xl py-3 md:py-4 px-4 outline-none rounded resize-none text-white placeholder:text-white/30"
           ></textarea>
           <button
             type="submit"
-            className="mt-3 flex justify-between items-center bg-white/80 w-32 px-2 py-1 rounded-full cursor-pointer"
+            className="mt-3 flex justify-between items-center bg-white/80 w-32 px-2 py-1.5 rounded-full cursor-pointer"
           >
-            <span className="text-black font-medium ml-2">SEND</span>
+            <span className="text-black font-medium ml-2">Send</span>
             <BsArrowRightCircleFill className="text-blue-700 text-2xl" />
           </button>
         </form>
       </div>
-      <div>
-        <img
-          src={contact}
-          alt="contact"
-          className="h-[250px] xs:h-[300px] sm:h-[360px] xl:h-[400px]"
-        />
+      <div className="flex flex-col gap-8 py-10 w-[calc(100vw-70px)] xs:w-[calc(100vw-100px)] sm:w-[500px] lg:w-auto">
+        <a href="mailto:naveennsonii@gmail.com" target="_blank">
+          <div className="group hover:cursor-pointer flex gap-5">
+            <SiGmail className="text-2xl sm:text-3xl group-hover:drop-shadow-my text-gray-400 group-hover:text-white transition-all" />
+            <p className="text-gray-400 text-sm sm:text-base hover:text-white font-poppins">
+              naveennsonii@gmail.com
+            </p>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/soni-naveen" target="_blank">
+          <div className="group hover:cursor-pointer flex gap-5">
+            <FaLinkedin className="text-2xl sm:text-3xl group-hover:drop-shadow-my text-gray-400 group-hover:text-white transition-all" />
+            <p className="text-gray-400 text-sm sm:text-base hover:text-white font-poppins">
+              soni-naveen
+            </p>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/naveenn.soni" target="_blank">
+          <div className="group hover:cursor-pointer flex gap-5">
+            <FaInstagram className="text-2xl sm:text-3xl group-hover:drop-shadow-my text-gray-400 group-hover:text-white transition-all" />
+            <p className="text-gray-400 text-sm sm:text-base hover:text-white font-poppins">
+              naveenn.soni
+            </p>
+          </div>
+        </a>
+        <a href="https://github.com/soni-naveen" target="_blank">
+          <div className="group hover:cursor-pointer flex gap-5">
+            <FaGithub className="text-2xl sm:text-3xl group-hover:drop-shadow-my text-gray-400 group-hover:text-white transition-all" />
+            <p className="text-gray-400 text-sm sm:text-base hover:text-white font-poppins">
+              soni-naveen
+            </p>
+          </div>
+        </a>
       </div>
     </div>
   );

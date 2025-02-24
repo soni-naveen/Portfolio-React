@@ -9,12 +9,12 @@ export default {
           "100%": { "background-position": "-100%" },
         },
       },
+      animation: {
+        shine: "shine 5s linear infinite",
+      },
       screens: {
         xxs: "350px",
         xs: "401px",
-      },
-      animation: {
-        shine: "shine 5s linear infinite",
       },
       fontFamily: {
         poppins: ['"Poppins"', "serif"],
@@ -40,7 +40,7 @@ export default {
         clamp3: "clamp(1.6rem, 3.8vw, 2.5rem)",
       },
       dropShadow: {
-        my: "0 0 15px rgba(255, 255, 255, 0.8)",
+        my: "0 0 10px rgba(255, 255, 255, 0.7)",
       },
     },
   },

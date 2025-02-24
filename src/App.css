@@ -1,6 +1,25 @@
-body::-webkit-scrollbar {
-  display: none;
-}
 html {
   scroll-behavior: smooth;
+}
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2a2a38; /* Dark greyish-purple background */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    45deg,
+    #6b5b95,
+    #8e7ab5
+  ); /* Purple-grey gradient */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, #5a4d8b, #7a6da5);
 }

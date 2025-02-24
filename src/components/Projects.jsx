@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Projects() {
   return (
-    <div id="projects" className="my-20">
+    <div id="projects" className="py-10">
       <div className="w-[80%] mx-auto">
         <h1 className="text-clamp3 font-bold font-poppins text-white">
           <div>Projects</div>

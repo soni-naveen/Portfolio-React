@@ -3,7 +3,7 @@ import AboutmeAnimate from "./AboutmeAnimate";
 
 export default function Aboutme() {
   return (
-    <div id="about" className="my-20">
+    <div id="about" className="py-10">
       <div className="w-[80%] mx-auto">
         <h1 className="text-clamp3 font-bold font-poppins text-white">
           <div>About Me</div>
