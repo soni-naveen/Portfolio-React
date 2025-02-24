@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
+import SplitText from "./ui/SplitText";
 import { motion } from "framer-motion";
-import Lottie from "lottie-react";
-import loadingAnimation from "../assets/Loader.json";
 
 export default function Loader() {
   const [isVisible, setIsVisible] = useState(true);
@@ -13,20 +12,23 @@ export default function Loader() {
 
     return () => clearTimeout(timer);
   }, []);
-
   return (
-    <div className="flex justify-center items-center h-screen w-full bg-black">
-      <motion.div
-        initial={{ opacity: 1 }}
-        animate={{ opacity: isVisible ? 1 : 0 }}
-        transition={{ duration: 1 }}
-        className="transition-opacity duration-1000"
-      >
-        <Lottie
-          animationData={loadingAnimation}
-          className="h-60 w-60 sm:h-80 sm:w-80"
-        />
-      </motion.div>
-    </div>
+    <motion.div
+      initial={{ opacity: 1 }}
+      animate={{ opacity: isVisible ? 1 : 0 }}
+      transition={{ duration: 1 }}
+      className="transition-opacity duration-1000 text-center"
+    >
+      <SplitText
+        text="Welcome to My Portfolio"
+        className="text-2xl xxs:text-3xl xs:text-4xl md:text-5xl font-poppins font-semibold"
+        delay={100}
+        animationFrom={{ opacity: 0, transform: "translate3d(0,50px,0)" }}
+        animationTo={{ opacity: 1, transform: "translate3d(0,0,0)" }}
+        easing="easeOutCubic"
+        threshold={0.2}
+        rootMargin="-50px"
+      />
+    </motion.div>
   );
 }

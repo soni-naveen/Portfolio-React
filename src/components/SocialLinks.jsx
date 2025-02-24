@@ -8,16 +8,16 @@ export default function SocialLinks() {
   return (
     <div className="text-gray-400 flex justify-center items-center gap-5">
       <a href="https://www.linkedin.com/in/soni-naveen" target="_blank">
-        <FaLinkedin className="text-xl sm:text-2xl hover:cursor-pointer hover:drop-shadow-my hover:text-white transition-all duration-200" />
+        <FaLinkedin className="text-xl sm:text-2xl hover:cursor-pointer hover:drop-shadow-my hover:text-white transition-all duration-100" />
       </a>
       <a href="mailto:naveennsonii@gmail.com" target="_blank">
-        <SiGmail className="text-xl sm:text-2xl hover:cursor-pointer hover:drop-shadow-my hover:text-white transition-all duration-200" />
+        <SiGmail className="text-xl sm:text-2xl hover:cursor-pointer hover:drop-shadow-my hover:text-white transition-all duration-100" />
       </a>
       <a href="https://www.instagram.com/naveenn.soni" target="_blank">
-        <FaInstagram className="text-xl sm:text-2xl hover:cursor-pointer hover:drop-shadow-my hover:text-white transition-all duration-200" />
+        <FaInstagram className="text-xl sm:text-2xl hover:cursor-pointer hover:drop-shadow-my hover:text-white transition-all duration-100" />
       </a>
       <a href="https://github.com/soni-naveen" target="_blank">
-        <FaGithub className="text-xl sm:text-2xl hover:cursor-pointer hover:drop-shadow-my hover:text-white transition-all duration-200" />
+        <FaGithub className="text-xl sm:text-2xl hover:cursor-pointer hover:drop-shadow-my hover:text-white transition-all duration-100" />
       </a>
     </div>
   );

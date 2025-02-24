@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import { motion } from "framer-motion";
 import Loader from "./components/Loader";
 import Navbar from "./components/Navbar";
 import Intro from "./components/Intro";
@@ -8,7 +7,7 @@ import Contact from "./components/Contact";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Aboutme from "./components/Aboutme";
-import background from "./assets/background.svg";
+import background from "./assets/hero.svg";
 import Footer from "./components/Footer";
 
 function HashRedirect() {
@@ -55,30 +54,25 @@ export default function App() {
         backgroundAttachment: "fixed",
       }}
     >
-      {/* {loading ? (
-        <div className="flex justify-center items-center bg-black min-h-screen">
+      {loading ? (
+        <div className="flex justify-center items-center text-white bg-[#06021d] h-[calc(100vh-50px)]">
           <Loader />
         </div>
-      ) : ( */}
-      <>
-        <Navbar />
-        <ScrollToTop />
-        <HashRedirect />
-        <motion.div
-          initial={{ y: 100, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="min-h-screen backdrop-blur-[2px]"
-        >
-          <Intro />
-          <Skills />
-          <Projects />
-          <Aboutme />
-          <Contact />
-          <Footer />
-        </motion.div>
-      </>
-      {/* )} */}
+      ) : (
+        <>
+          <ScrollToTop />
+          <HashRedirect />
+          <Navbar />
+          <div className="min-h-screen backdrop-blur-[2px]">
+            <Intro />
+            <Skills />
+            <Projects />
+            <Aboutme />
+            <Contact />
+            <Footer />
+          </div>
+        </>
+      )}
     </div>
   );
 }

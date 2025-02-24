@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import { SiGmail } from "react-icons/si";
-import ShinyText from "../components/ui/ShinyText";
+import ShinyText from "./ui/ShinyText";
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -70,7 +70,7 @@ export default function Contact() {
             name="Name"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="w-[calc(100vw-70px)] xs:w-[calc(100vw-100px)] sm:w-[500px] bg-gray-700/50 backdrop-blur-xl py-3 md:py-4 px-4 outline-none rounded text-white placeholder:text-white/30"
+            className="w-[calc(100vw-70px)] xs:w-[calc(100vw-100px)] sm:w-[500px] backdrop-blur-sm bg-gray-700/50 py-3 md:py-4 px-4 outline-none rounded text-white placeholder:text-white/30"
           />
           <input
             required
@@ -79,16 +79,16 @@ export default function Contact() {
             name="E-mail"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="w-[calc(100vw-70px)] xs:w-[calc(100vw-100px)] sm:w-[500px] bg-gray-700/50 backdrop-blur-xl py-3 md:py-4 px-4 outline-none rounded text-white placeholder:text-white/30"
+            className="w-[calc(100vw-70px)] xs:w-[calc(100vw-100px)] sm:w-[500px] backdrop-blur-sm bg-gray-700/50 py-3 md:py-4 px-4 outline-none rounded text-white placeholder:text-white/30"
           />
           <textarea
             required
-            placeholder="Message"
+            placeholder="Your Message"
             rows={4}
             name="Message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            className="w-[calc(100vw-70px)] xs:w-[calc(100vw-100px)] sm:w-[500px] bg-gray-700/50 backdrop-blur-xl py-3 md:py-4 px-4 outline-none rounded resize-none text-white placeholder:text-white/30"
+            className="w-[calc(100vw-70px)] xs:w-[calc(100vw-100px)] sm:w-[500px] backdrop-blur-sm bg-gray-700/50 py-3 md:py-4 px-4 outline-none rounded resize-none text-white placeholder:text-white/30"
           ></textarea>
           <button
             type="submit"
@@ -99,10 +99,10 @@ export default function Contact() {
           </button>
         </form>
       </div>
-      <div className="flex flex-col gap-8 py-10 w-[calc(100vw-70px)] xs:w-[calc(100vw-100px)] sm:w-[500px] lg:w-auto">
+      <div className="flex flex-col gap-6 sm:gap-8 pt-3 pb-7 sm:pt-5 sm:pb-10 w-[calc(100vw-70px)] xs:w-[calc(100vw-100px)] sm:w-[500px] lg:w-auto">
         <a href="mailto:naveennsonii@gmail.com" target="_blank">
           <div className="group hover:cursor-pointer flex gap-5">
-            <SiGmail className="text-2xl sm:text-3xl group-hover:drop-shadow-my text-gray-400 group-hover:text-white transition-all" />
+            <SiGmail className="text-2xl sm:text-3xl group-hover:text-white text-gray-400 group-hover:text-white transition-all" />
             <p className="text-gray-400 text-sm sm:text-base hover:text-white font-poppins">
               naveennsonii@gmail.com
             </p>
@@ -110,7 +110,7 @@ export default function Contact() {
         </a>
         <a href="https://www.linkedin.com/in/soni-naveen" target="_blank">
           <div className="group hover:cursor-pointer flex gap-5">
-            <FaLinkedin className="text-2xl sm:text-3xl group-hover:drop-shadow-my text-gray-400 group-hover:text-white transition-all" />
+            <FaLinkedin className="text-2xl sm:text-3xl group-hover:text-white text-gray-400 group-hover:text-white transition-all" />
             <p className="text-gray-400 text-sm sm:text-base hover:text-white font-poppins">
               soni-naveen
             </p>
@@ -118,7 +118,7 @@ export default function Contact() {
         </a>
         <a href="https://www.instagram.com/naveenn.soni" target="_blank">
           <div className="group hover:cursor-pointer flex gap-5">
-            <FaInstagram className="text-2xl sm:text-3xl group-hover:drop-shadow-my text-gray-400 group-hover:text-white transition-all" />
+            <FaInstagram className="text-2xl sm:text-3xl group-hover:text-white text-gray-400 group-hover:text-white transition-all" />
             <p className="text-gray-400 text-sm sm:text-base hover:text-white font-poppins">
               naveenn.soni
             </p>
@@ -126,7 +126,7 @@ export default function Contact() {
         </a>
         <a href="https://github.com/soni-naveen" target="_blank">
           <div className="group hover:cursor-pointer flex gap-5">
-            <FaGithub className="text-2xl sm:text-3xl group-hover:drop-shadow-my text-gray-400 group-hover:text-white transition-all" />
+            <FaGithub className="text-2xl sm:text-3xl group-hover:text-white text-gray-400 group-hover:text-white transition-all" />
             <p className="text-gray-400 text-sm sm:text-base hover:text-white font-poppins">
               soni-naveen
             </p>
