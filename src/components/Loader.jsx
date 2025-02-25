@@ -17,7 +17,7 @@ export default function Loader() {
       initial={{ opacity: 1 }}
       animate={{ opacity: isVisible ? 1 : 0 }}
       transition={{ duration: 1 }}
-      className="transition-opacity duration-1000 text-center"
+      className="transition-opacity duration-1000 text-center px-5"
     >
       <SplitText
         text="Welcome to My Portfolio"

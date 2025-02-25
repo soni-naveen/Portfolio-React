@@ -70,7 +70,7 @@ export default function Contact() {
             name="Name"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="w-[calc(100vw-70px)] xs:w-[calc(100vw-100px)] sm:w-[500px] backdrop-blur-sm bg-gray-700/50 py-3 md:py-4 px-4 outline-none rounded text-white placeholder:text-white/30"
+            className="w-[calc(100vw-70px)] xs:w-[calc(100vw-100px)] sm:w-[500px] backdrop-blur-sm bg-gray-700/50 py-3 sm:py-3.5 px-4 outline-none rounded text-white placeholder:text-white/30"
           />
           <input
             required
@@ -79,7 +79,7 @@ export default function Contact() {
             name="E-mail"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="w-[calc(100vw-70px)] xs:w-[calc(100vw-100px)] sm:w-[500px] backdrop-blur-sm bg-gray-700/50 py-3 md:py-4 px-4 outline-none rounded text-white placeholder:text-white/30"
+            className="w-[calc(100vw-70px)] xs:w-[calc(100vw-100px)] sm:w-[500px] backdrop-blur-sm bg-gray-700/50 py-3 sm:py-3.5 px-4 outline-none rounded text-white placeholder:text-white/30"
           />
           <textarea
             required
@@ -88,46 +88,46 @@ export default function Contact() {
             name="Message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
-            className="w-[calc(100vw-70px)] xs:w-[calc(100vw-100px)] sm:w-[500px] backdrop-blur-sm bg-gray-700/50 py-3 md:py-4 px-4 outline-none rounded resize-none text-white placeholder:text-white/30"
+            className="w-[calc(100vw-70px)] xs:w-[calc(100vw-100px)] sm:w-[500px] backdrop-blur-sm bg-gray-700/50 py-3 sm:py-3.5 px-4 outline-none rounded resize-none text-white placeholder:text-white/30"
           ></textarea>
           <button
             type="submit"
-            className="mt-3 flex justify-between items-center bg-white/80 w-32 px-2 py-1.5 rounded-full cursor-pointer"
+            className="mt-3 flex justify-between items-center bg-white/80 w-32 px-1.5 py-1 rounded-full cursor-pointer"
           >
             <span className="text-black font-medium ml-2">Send</span>
             <BsArrowRightCircleFill className="text-blue-700 text-2xl" />
           </button>
         </form>
       </div>
-      <div className="flex flex-col gap-6 sm:gap-8 pt-3 pb-7 sm:pt-5 sm:pb-10 w-[calc(100vw-70px)] xs:w-[calc(100vw-100px)] sm:w-[500px] lg:w-auto">
+      <div className="flex flex-col gap-6 sm:gap-8 pt-3 sm:pt-5 pb-10 w-[calc(100vw-70px)] xs:w-[calc(100vw-100px)] sm:w-[500px] lg:w-auto">
         <a href="mailto:naveennsonii@gmail.com" target="_blank">
           <div className="group hover:cursor-pointer flex gap-5">
-            <SiGmail className="text-2xl sm:text-3xl group-hover:text-white text-gray-400 group-hover:text-white transition-all" />
-            <p className="text-gray-400 text-sm sm:text-base hover:text-white font-poppins">
+            <SiGmail className="text-2xl sm:text-3xl text-gray-300 transition-all" />
+            <p className="text-gray-300 text-sm sm:text-base font-poppins">
               naveennsonii@gmail.com
             </p>
           </div>
         </a>
         <a href="https://www.linkedin.com/in/soni-naveen" target="_blank">
           <div className="group hover:cursor-pointer flex gap-5">
-            <FaLinkedin className="text-2xl sm:text-3xl group-hover:text-white text-gray-400 group-hover:text-white transition-all" />
-            <p className="text-gray-400 text-sm sm:text-base hover:text-white font-poppins">
+            <FaLinkedin className="text-2xl sm:text-3xl text-gray-300 transition-all" />
+            <p className="text-gray-300 text-sm sm:text-base font-poppins">
               soni-naveen
             </p>
           </div>
         </a>
         <a href="https://www.instagram.com/naveenn.soni" target="_blank">
           <div className="group hover:cursor-pointer flex gap-5">
-            <FaInstagram className="text-2xl sm:text-3xl group-hover:text-white text-gray-400 group-hover:text-white transition-all" />
-            <p className="text-gray-400 text-sm sm:text-base hover:text-white font-poppins">
+            <FaInstagram className="text-2xl sm:text-3xl text-gray-300 transition-all" />
+            <p className="text-gray-300 text-sm sm:text-base font-poppins">
               naveenn.soni
             </p>
           </div>
         </a>
         <a href="https://github.com/soni-naveen" target="_blank">
           <div className="group hover:cursor-pointer flex gap-5">
-            <FaGithub className="text-2xl sm:text-3xl group-hover:text-white text-gray-400 group-hover:text-white transition-all" />
-            <p className="text-gray-400 text-sm sm:text-base hover:text-white font-poppins">
+            <FaGithub className="text-2xl sm:text-3xl text-gray-300 transition-all" />
+            <p className="text-gray-300 text-sm sm:text-base font-poppins">
               soni-naveen
             </p>
           </div>
