@@ -47,7 +47,7 @@ export default function Skills() {
         <div className="w-full my-14">
           <Marquee
             gradient={true}
-            gradientColor="rgb(139, 92, 246, 0.2)"
+            gradientColor="#212040"
             gradientWidth={20}
             speed={100}
             pauseOnHover={false}
