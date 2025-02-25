@@ -1,6 +1,6 @@
 import React from "react";
 import Lottie from "lottie-react";
-import Animation from "../assets/Aboutme.json";
+import Animation from "../../assets/Aboutme.json";
 
 const AboutmeAnimate = () => {
   return (

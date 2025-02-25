@@ -38,7 +38,7 @@ export default function Skills() {
   ];
 
   return (
-    <div id="skills" className="py-10">
+    <div id="skills" className="pt-10">
       <h1 className="w-[80%] mx-auto text-clamp3 font-poppins font-bold text-white">
         <div>Skills</div>
         <div className="h-2 rounded-full w-[2em] bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500" />

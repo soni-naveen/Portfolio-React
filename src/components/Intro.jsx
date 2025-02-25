@@ -30,11 +30,7 @@ export default function Intro() {
               <defs>
                 <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
                   <stop id="stop1" stopColor="rgba(40, 10, 50)" offset="0%" />
-                  <stop
-                    id="stop2"
-                    stopColor="rgba(33, 32, 64)"
-                    offset="100%"
-                  />
+                  <stop id="stop2" stopColor="rgba(33, 32, 64)" offset="100%" />
                 </linearGradient>
               </defs>
               <mask id="mask1" mask-type="alpha">
@@ -81,7 +77,7 @@ export default function Intro() {
           <div className="mb-7 sm:mb-10">
             <SocialLinks />
           </div>
-          <a href={Resume}>
+          <a href={Resume} target="_blank">
             <button className="group text-gray-300 mx-auto font-poppins flex gap-2 border-2 border-gray-400 rounded-full text-sm sm:text-base px-4 py-2 md:px-5 md:py-2.5 hover:text-white duration-300 hover:drop-shadow-my">
               <MdOutlineFileDownload className="text-gray-300 text-xl md:text-2xl group-hover:text-white" />
               Resume

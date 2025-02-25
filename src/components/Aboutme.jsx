@@ -1,5 +1,5 @@
 import React from "react";
-import AboutmeAnimate from "./AboutmeAnimate";
+import AboutmeAnimate from "./ui/AboutmeAnimate";
 
 export default function Aboutme() {
   return (
