@@ -47,14 +47,11 @@ export default function Aboutme() {
               </Step>
               <Step>
                 <Card
-                  p1={"COMPUTER SCIENCE Engineering"}
+                  p1={"Bachelor's Degree"}
                   p2={"Chitkara University (CUIET), Punjab"}
                   p3={"CGPA : 9.33"}
-                  p4={"sept 2021 - July 2025"}
+                  p4={"Computer Science Engineering (2021 - 2025)"}
                 />
-              </Step>
-              <Step>
-                <Card p1={"Stay tuned for what's next!"} />
               </Step>
             </Stepper>
           </div>
