@@ -26,7 +26,7 @@ export default function Projects() {
         </h1>
         <div className="pt-10 pb-3 sm:pt-16 sm:pb-8 max-w-6xl mx-auto w-fit space-y-14">
           <Animate
-            distance={200}
+            distance={150}
             direction="vertical"
             reverse={false}
             config={{ tension: 50, friction: 20 }}
@@ -81,7 +81,7 @@ export default function Projects() {
             </SpotlightCard>
           </Animate>
           <Animate
-            distance={200}
+            distance={150}
             direction="vertical"
             reverse={false}
             config={{ tension: 50, friction: 20 }}
@@ -136,7 +136,7 @@ export default function Projects() {
             </SpotlightCard>
           </Animate>
           <Animate
-            distance={200}
+            distance={150}
             direction="vertical"
             reverse={false}
             config={{ tension: 50, friction: 20 }}
@@ -190,7 +190,7 @@ export default function Projects() {
             </SpotlightCard>
           </Animate>
           <Animate
-            distance={200}
+            distance={150}
             direction="vertical"
             reverse={false}
             config={{ tension: 50, friction: 20 }}

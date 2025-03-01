@@ -6,7 +6,7 @@ import { SiGmail } from "react-icons/si";
 
 export default function SocialLinks() {
   return (
-    <div className="text-gray-400 flex justify-center items-center gap-5">
+    <div className="text-gray-300 flex justify-center items-center gap-5">
       <a href="https://www.linkedin.com/in/soni-naveen" target="_blank">
         <FaLinkedin className="text-xl sm:text-2xl hover:cursor-pointer hover:drop-shadow-my hover:text-white transition-all duration-100" />
       </a>
