@@ -39,7 +39,7 @@ export default function Projects() {
               className="custom-spotlight-card"
               spotlightColor="rgba(100, 100, 200, 0.3)"
             >
-              <div className="text-white font-poppins flex flex-col xl:flex-row gap-4 sm:gap-8 xl:gap-16 cursor-default">
+              <div className="text-white font-poppins flex flex-col xl:flex-row gap-4 sm:gap-8 xl:gap-16">
                 <div>
                   <img
                     src={ecoride}
@@ -52,7 +52,7 @@ export default function Projects() {
                     <a href="https://theecoride.in" target="_blank">
                       <h1 className="font-medium text-xl xs:text-2xl sm:text-3xl mb-3 flex items-center gap-2 sm:gap-3 hover:underline">
                         EcoRide
-                        <FiExternalLink className="text-lg xs:text-xl sm:text-2xl text-cyan-400 cursor-pointer" />
+                        <FiExternalLink className="text-lg xs:text-xl sm:text-2xl text-cyan-400" />
                       </h1>
                     </a>
                     <p className="text-xs xs:text-sm sm:text-base">
@@ -94,7 +94,7 @@ export default function Projects() {
               className="custom-spotlight-card"
               spotlightColor="rgba(100, 100, 200, 0.3)"
             >
-              <div className="text-white font-poppins flex flex-col xl:flex-row gap-4 sm:gap-8 xl:gap-16 cursor-default">
+              <div className="text-white font-poppins flex flex-col xl:flex-row gap-4 sm:gap-8 xl:gap-16">
                 <div>
                   <img
                     src={esocial}
@@ -107,7 +107,7 @@ export default function Projects() {
                     <a href="https://e-social.vercel.app" target="_blank">
                       <h1 className="font-medium text-xl xs:text-2xl sm:text-3xl mb-3 flex items-center gap-2 sm:gap-3 hover:underline">
                         E-Social
-                        <FiExternalLink className="text-lg xs:text-xl sm:text-2xl text-cyan-400 cursor-pointer" />
+                        <FiExternalLink className="text-lg xs:text-xl sm:text-2xl text-cyan-400" />
                       </h1>
                     </a>
                     <p className="text-xs xs:text-sm sm:text-base">
@@ -149,7 +149,7 @@ export default function Projects() {
               className="custom-spotlight-card"
               spotlightColor="rgba(100, 100, 200, 0.3)"
             >
-              <div className="text-white font-poppins flex flex-col xl:flex-row gap-4 sm:gap-8 xl:gap-16 cursor-default">
+              <div className="text-white font-poppins flex flex-col xl:flex-row gap-4 sm:gap-8 xl:gap-16">
                 <div>
                   <img
                     src={haze}
@@ -162,7 +162,7 @@ export default function Projects() {
                     <a href="https://hazeuae.com" target="_blank">
                       <h1 className="font-medium text-xl xs:text-2xl sm:text-3xl mb-3 flex items-center gap-2 sm:gap-3 hover:underline">
                         Haze Production
-                        <FiExternalLink className="text-lg xs:text-xl sm:text-2xl text-cyan-400 cursor-pointer" />
+                        <FiExternalLink className="text-lg xs:text-xl sm:text-2xl text-cyan-400" />
                       </h1>
                     </a>
                     <p className="text-xs xs:text-sm sm:text-base">
@@ -203,7 +203,7 @@ export default function Projects() {
               className="custom-spotlight-card"
               spotlightColor="rgba(100, 100, 200, 0.3)"
             >
-              <div className="text-white font-poppins flex flex-col xl:flex-row gap-4 sm:gap-8 xl:gap-16 cursor-default">
+              <div className="text-white font-poppins flex flex-col xl:flex-row gap-4 sm:gap-8 xl:gap-16">
                 <div>
                   <img
                     src={tictactoe}
@@ -219,7 +219,7 @@ export default function Projects() {
                     >
                       <h1 className="font-medium text-xl xs:text-2xl sm:text-3xl mb-3 flex items-center gap-2 sm:gap-3 hover:underline">
                         Tic Tac Toe
-                        <FiExternalLink className="text-lg xs:text-xl sm:text-2xl text-cyan-400 cursor-pointer" />
+                        <FiExternalLink className="text-lg xs:text-xl sm:text-2xl text-cyan-400" />
                       </h1>
                     </a>
                     <p className="text-xs xs:text-sm sm:text-base">

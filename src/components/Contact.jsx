@@ -92,7 +92,7 @@ export default function Contact() {
             ></textarea>
             <button
               type="submit"
-              className="mt-3 flex items-center bg-slate-300/90 w-full justify-center py-2 rounded-md cursor-pointer active:scale-95 transition-all"
+              className="mt-3 flex items-center bg-slate-300/90 w-full justify-center py-2 rounded-md active:scale-95 transition-all"
             >
               <span className="text-black font-semibold">
                 {loading ? "Sending..." : "Send Message"}
@@ -106,7 +106,7 @@ export default function Contact() {
             target="_blank"
             className="w-fit"
           >
-            <div className="group hover:cursor-pointer flex gap-5">
+            <div className="group flex gap-5">
               <SiGmail className="text-2xl sm:text-3xl text-gray-300 transition-all group-hover:text-white" />
               <p className="text-gray-300 text-sm sm:text-base font-poppins hover:underline hover:text-white">
                 naveennsonii@gmail.com
@@ -118,7 +118,7 @@ export default function Contact() {
             target="_blank"
             className="w-fit"
           >
-            <div className="group hover:cursor-pointer flex gap-5">
+            <div className="group flex gap-5">
               <FaLinkedin className="text-2xl sm:text-3xl text-gray-300 transition-all group-hover:text-white" />
               <p className="text-gray-300 text-sm sm:text-base font-poppins hover:underline hover:text-white">
                 soni-naveen
@@ -130,7 +130,7 @@ export default function Contact() {
             target="_blank"
             className="w-fit"
           >
-            <div className="group hover:cursor-pointer flex gap-5">
+            <div className="group flex gap-5">
               <FaInstagram className="text-2xl sm:text-3xl text-gray-300 transition-all group-hover:text-white" />
               <p className="text-gray-300 text-sm sm:text-base font-poppins hover:underline hover:text-white">
                 naveenn.soni
@@ -142,7 +142,7 @@ export default function Contact() {
             target="_blank"
             className="w-fit"
           >
-            <div className="group hover:cursor-pointer flex gap-5">
+            <div className="group flex gap-5">
               <FaGithub className="text-2xl sm:text-3xl text-gray-300 transition-all group-hover:text-white" />
               <p className="text-gray-300 text-sm sm:text-base font-poppins hover:underline hover:text-white">
                 soni-naveen

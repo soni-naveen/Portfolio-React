@@ -28,7 +28,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`sticky z-50 transition-all duration-300 ${
+      className={`sticky z-30 transition-all duration-300 ${
       isVisible ? "top-5" : "-top-20"
       }`}
     >

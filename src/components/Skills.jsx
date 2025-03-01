@@ -58,7 +58,7 @@ export default function Skills() {
           >
             {skillsData.map((skill, id) => (
               <div
-                className="w-36 min-w-fit h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 sm:m-5 rounded-lg group relative hover:scale-[1.05] cursor-pointer"
+                className="w-36 min-w-fit h-fit flex flex-col items-center justify-center transition-all duration-500 m-3 sm:m-5 rounded-lg group relative hover:scale-[1.05]"
                 key={id}
               >
                 <div className="h-full rounded-lg border border-[#2e2c5c] bg-[#212040]/80 shadow-none shadow-gray-50 group-hover:border-indigo-300/40 transition-all duration-500">
@@ -67,7 +67,7 @@ export default function Skills() {
                       <div className="h-[2px] w-full bg-gradient-to-r from-transparent via-[#514eba] to-transparent" />
                     </div>
                   </div>
-                  <div className="flex flex-col items-center justify-center gap-3 h-32 w-32 sm:h-44 sm:w-44 cursor-default">
+                  <div className="flex flex-col items-center justify-center gap-3 h-32 w-32 sm:h-44 sm:w-44">
                     <div className="h-12 sm:h-16">
                       <img
                         src={skill.image}

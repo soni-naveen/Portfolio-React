@@ -9,6 +9,7 @@ import Projects from "./components/Projects";
 import Aboutme from "./components/Aboutme";
 import background from "./assets/hero.svg";
 import Footer from "./components/Footer";
+import Cursor from "./components/ui/Cursor";
 
 function HashRedirect() {
   const location = useLocation();
@@ -62,6 +63,7 @@ export default function App() {
         <div className="min-h-screen relative before:absolute before:inset-0 before:backdrop-blur-[2px]">
           <div className="relative">
             <ScrollToTop />
+            <Cursor />
             <HashRedirect />
             <Navbar />
             <Intro />
