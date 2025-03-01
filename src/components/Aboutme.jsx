@@ -17,7 +17,7 @@ export default function Aboutme() {
           <AboutmeAnimate />
         </div>
         <div className="flex flex-col gap-16 2xl:gap-20">
-          <div className="text-white font-poppins md:text-center max-w-3xl xl:max-w-full sm:text-lg">
+          <div className="text-white font-poppins md:text-center max-w-3xl xl:max-w-full text-sm xs:text-base sm:text-lg">
             I'm a dedicated MERN Stack Developer with a focus on building
             scalable, high-performance web applications. Creative and
             detail-oriented, I specialize in responsive design, crafting
@@ -47,7 +47,7 @@ export default function Aboutme() {
               </Step>
               <Step>
                 <Card
-                  p1={"COMPUTER SCIENCE ENGINEERING"}
+                  p1={"COMPUTER SCIENCE Engineering"}
                   p2={"Chitkara University (CUIET), Punjab"}
                   p3={"CGPA : 9.33"}
                   p4={"sept 2021 - July 2025"}

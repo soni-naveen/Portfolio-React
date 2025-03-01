@@ -59,11 +59,11 @@ export default function App() {
           <Loader />
         </div>
       ) : (
-        <>
-          <ScrollToTop />
-          <HashRedirect />
-          <Navbar />
-          <div className="min-h-screen backdrop-blur-[2px]">
+        <div className="min-h-screen relative before:absolute before:inset-0 before:backdrop-blur-[2px]">
+          <div className="relative">
+            <ScrollToTop />
+            <HashRedirect />
+            <Navbar />
             <Intro />
             <Skills />
             <Projects />
@@ -71,7 +71,7 @@ export default function App() {
             <Contact />
             <Footer />
           </div>
-        </>
+        </div>
       )}
     </div>
   );

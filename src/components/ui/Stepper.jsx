@@ -56,8 +56,8 @@ export default function Stepper({
       {...rest}
     >
       <div
-        className={`mx-auto w-full max-w-md rounded-[30px] shadow-xl ${stepCircleContainerClassName}`}
-        style={{ border: "1px solid whitesmoke" }}
+        className={`mx-auto w-full bg-white/10 backdrop-blur-sm max-w-md rounded-[30px] shadow-xl ${stepCircleContainerClassName}`}
+        style={{ border: "1px solid rgba(255, 255, 255, 0.3)" }}
       >
         <div
           className={`${stepContainerClassName} flex w-full items-center py-9 px-10`}
@@ -103,7 +103,7 @@ export default function Stepper({
           {stepsArray[currentStep - 1]}
         </StepContentWrapper>
         {!isCompleted && (
-          <div className={`px-10 py-7 ${footerClassName}`}>
+          <div className={`p-10 ${footerClassName}`}>
             <div
               className={`flex mt-2 xxs:mt-0 ${
                 currentStep !== 1 ? "justify-between" : "justify-end"
@@ -115,7 +115,7 @@ export default function Stepper({
                   className={`duration-350 rounded px-2 py-1 transition ${
                     currentStep === 1
                       ? "pointer-events-none opacity-50 text-neutral-400"
-                      : "text-white font-poppins font-light border border-white/70 py-1 px-3.5 text-xs sm:text-sm"
+                      : "text-white/70 font-poppins font-light border border-white/30 py-1 px-3.5 text-xs sm:text-sm"
                   }`}
                   {...backButtonProps}
                 >

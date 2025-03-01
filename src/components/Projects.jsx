@@ -29,7 +29,7 @@ export default function Projects() {
             distance={150}
             direction="vertical"
             reverse={false}
-            config={{ tension: 50, friction: 20 }}
+            config={{ tension: 100, friction: 20 }}
             initialOpacity={0.2}
             animateOpacity
             scale={1.1}
@@ -84,7 +84,7 @@ export default function Projects() {
             distance={150}
             direction="vertical"
             reverse={false}
-            config={{ tension: 50, friction: 20 }}
+            config={{ tension: 100, friction: 20 }}
             initialOpacity={0.2}
             animateOpacity
             scale={1.1}
@@ -139,7 +139,7 @@ export default function Projects() {
             distance={150}
             direction="vertical"
             reverse={false}
-            config={{ tension: 50, friction: 20 }}
+            config={{ tension: 100, friction: 20 }}
             initialOpacity={0.2}
             animateOpacity
             scale={1.1}
@@ -193,7 +193,7 @@ export default function Projects() {
             distance={150}
             direction="vertical"
             reverse={false}
-            config={{ tension: 50, friction: 20 }}
+            config={{ tension: 100, friction: 20 }}
             initialOpacity={0.2}
             animateOpacity
             scale={1.1}
