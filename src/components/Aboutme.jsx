@@ -16,7 +16,7 @@ export default function Aboutme() {
         <div>
           <AboutmeAnimate />
         </div>
-        <div className="flex flex-col gap-16 2xl:gap-20">
+        <div className="flex flex-col gap-16">
           <div className="text-white font-poppins md:text-center max-w-3xl xl:max-w-full text-sm xs:text-base sm:text-lg">
             I'm a dedicated MERN Stack Developer with a focus on building
             scalable, high-performance web applications. Creative and

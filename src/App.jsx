@@ -6,6 +6,7 @@ import Intro from "./components/Intro";
 import Contact from "./components/Contact";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import Certifications from "./components/Certifications";
 import Aboutme from "./components/Aboutme";
 import background from "./assets/hero.svg";
 import Footer from "./components/Footer";
@@ -69,6 +70,7 @@ export default function App() {
             <Intro />
             <Skills />
             <Projects />
+            <Certifications />
             <Aboutme />
             <Contact />
             <Footer />

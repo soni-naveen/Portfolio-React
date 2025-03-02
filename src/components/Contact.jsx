@@ -50,7 +50,7 @@ export default function Contact() {
     <div id="contact" className="mt-10 lg:mb-20">
       <h1 className="font-poppins font-bold text-clamp3 text-white mb-16 w-[80%] mx-auto">
         <ShinyText
-          text="Let's Work Together"
+          text="Get In Touch"
           disabled={false}
           speed={3}
           className="custom-class"
