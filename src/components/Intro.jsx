@@ -63,7 +63,7 @@ export default function Intro() {
         </Animate>
         <div>
           <div className="text-white text-center font-poppins px-3 text-clamp1 font-medium tracking-wide mb-5 sm:mb-7">
-            Hi, I'm <span className="font-bold">NAVEEN SONI</span> <br />{" "}
+            Hi, I'm <span className="font-bold text-blue-400">NAVEEN SONI</span> <br />{" "}
             <BlurText
               text="MERN Stack Developer"
               delay={300}
@@ -78,8 +78,8 @@ export default function Intro() {
             <SocialLinks />
           </div>
           <a href={Resume} target="_blank">
-            <button className="group text-gray-300 mx-auto font-poppins flex gap-2 border-2 border-gray-400 rounded-full text-sm sm:text-base px-4 py-2 md:px-5 md:py-2.5 hover:text-white duration-300 hover:drop-shadow-my">
-              <MdOutlineFileDownload className="text-gray-300 text-xl md:text-2xl group-hover:text-white" />
+            <button className="group text-gray-200 mx-auto font-poppins flex gap-2 bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-600 rounded-full text-sm sm:text-base px-4 py-2 md:px-5 md:py-2.5 hover:text-white duration-300">
+              <MdOutlineFileDownload className="text-gray-200 text-xl md:text-2xl group-hover:text-white" />
               Resume
             </button>
           </a>
