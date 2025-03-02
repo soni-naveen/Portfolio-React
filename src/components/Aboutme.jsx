@@ -32,7 +32,7 @@ export default function Aboutme() {
               <Step>
                 <Card
                   p1={"Class 10th"}
-                  p2={"S.M Little Angel's Middle School, Haryana"}
+                  p2={"S.M Little Angel's School, Haryana"}
                   p3={"75.8%"}
                   p4={"Central Board of Secondary Education"}
                 />
