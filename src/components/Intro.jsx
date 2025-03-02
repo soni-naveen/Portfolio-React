@@ -63,7 +63,7 @@ export default function Intro() {
         </Animate>
         <div>
           <div className="text-white text-center font-poppins px-3 text-clamp1 font-medium tracking-wide mb-5 sm:mb-7">
-            Hi, I'm <span className="font-bold text-blue-400">NAVEEN SONI</span> <br />{" "}
+            Hi, I'm <span className="font-bold text-purple-300">NAVEEN SONI</span> <br />{" "}
             <BlurText
               text="MERN Stack Developer"
               delay={300}
