@@ -65,7 +65,7 @@ export default function Certifications() {
   ];
 
   return (
-    <div id="certifications" className="pt-10">
+    <div id="certifications" className="pt-16">
       <div className="w-[80%] mx-auto">
         <h1 className="text-clamp3 font-bold font-poppins text-white">
           <div>Certifications</div>

@@ -24,7 +24,7 @@ export default function Projects() {
           <div>Projects</div>
           <div className="h-2 rounded-full w-[2em] bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500" />
         </h1>
-        <div className="pt-10 pb-3 sm:pt-16 sm:pb-8 max-w-6xl mx-auto w-fit space-y-14">
+        <div className="pt-10 sm:pt-16 pb-6 sm:pb-8 max-w-6xl mx-auto w-fit space-y-14">
           <Animate
             distance={150}
             direction="vertical"
@@ -246,15 +246,15 @@ export default function Projects() {
               </div>
             </SpotlightCard>
           </Animate>
-          <p className="text-white font-poppins text-base xs:text-lg sm:text-xl text-center font-light underline">
-            <a
-              href="https://github.com/soni-naveen?tab=repositories"
-              target="_blank"
-            >
-              view more
-            </a>
-          </p>
         </div>
+        <p className="text-white mt-3 border w-fit mx-auto rounded-full py-1 px-5 border-gray-400 font-poppins text-xs xs:text-sm sm:text-base text-center font-light">
+          <a
+            href="https://github.com/soni-naveen?tab=repositories"
+            target="_blank"
+          >
+            view more...
+          </a>
+        </p>
       </div>
     </div>
   );

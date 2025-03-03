@@ -47,8 +47,8 @@ export default function Contact() {
   };
 
   return (
-    <div id="contact" className="mt-10 lg:mb-20">
-      <h1 className="font-poppins font-bold text-clamp3 text-white mb-16 w-[80%] mx-auto">
+    <div id="contact" className="lg:mb-20">
+      <h1 className="font-poppins font-bold text-clamp3 text-white mb-10 sm:mb-12 w-[80%] mx-auto">
         <ShinyText
           text="Get In Touch"
           disabled={false}
