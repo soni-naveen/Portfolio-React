@@ -14,7 +14,7 @@ export default function Cursor() {
 
   return (
     <div
-      className="hidden sm:block fixed w-6 h-6 border border-white/10 bg-white/20 shadow-md z-50 rounded-full pointer-events-none z-50 transition-transform duration-75"
+      className="hidden sm:block fixed w-4 h-4 border border-white/10 bg-white/30 shadow-md z-50 rounded-full pointer-events-none z-50 transition-transform duration-75"
       style={{
         transform: `translate(${position.x}px, ${position.y}px)`,
       }}
