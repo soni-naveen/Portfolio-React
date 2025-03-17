@@ -63,7 +63,9 @@ export default function Intro() {
         </Animate>
         <div>
           <div className="text-white text-center font-poppins px-3 text-clamp1 font-medium tracking-wide mb-5 sm:mb-7">
-            Hi, I'm <span className="font-bold text-purple-300">NAVEEN SONI</span> <br />{" "}
+            Hi, I'm{" "}
+            <span className="font-bold text-purple-300">NAVEEN SONI</span>{" "}
+            <br />{" "}
             <BlurText
               text="MERN Stack Developer"
               delay={500}
@@ -77,11 +79,16 @@ export default function Intro() {
           <div className="mb-7 sm:mb-10">
             <SocialLinks />
           </div>
-          <a href={Resume} target="_blank">
-            <button className="group text-gray-200 mx-auto font-poppins flex gap-2 bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-600 rounded-full text-sm sm:text-base px-4 py-2 md:px-5 md:py-2.5 hover:text-white duration-300">
-              <MdOutlineFileDownload className="text-gray-200 text-xl md:text-2xl group-hover:text-white" />
-              Resume
-            </button>
+          <a href={Resume} target="_blank" className="flex justify-center">
+            <div className="group relative w-fit transition-transform duration-300 active:scale-95">
+              <button className="relative z-10 rounded-full bg-gradient-to-br from-indigo-500 to-fuchsia-500 p-0.5 duration-300 group-hover:scale-105">
+                <p className="block rounded-full bg-slate-950 px-4 py-2 text-slate-100 duration-300 flex items-center gap-2 group-hover:bg-slate-950/50 group-hover:text-slate-50 group-active:bg-slate-950/80">
+                  <MdOutlineFileDownload className="text-gray-200 text-lg sm:text-xl md:text-2xl group-hover:text-white" />
+                  <span className="text-sm sm:text-base font-poppins">Resume</span>
+                </p>
+              </button>
+              <span className="pointer-events-none absolute -inset-4 z-0 transform-gpu rounded-2xl bg-gradient-to-br from-indigo-500 to-fuchsia-500 opacity-30 blur-xl transition-all duration-300 group-hover:opacity-40 group-active:opacity-50" />
+            </div>
           </a>
         </div>
       </div>
