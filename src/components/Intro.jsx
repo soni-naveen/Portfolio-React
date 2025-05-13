@@ -1,6 +1,6 @@
 import React from "react";
 import Naveenphoto from "../assets/naveensoni.png";
-import Resume from "../assets/Naveen_Resume_New.pdf";
+import Resume from "../assets/Naveen_Resume.pdf";
 import { MdOutlineFileDownload } from "react-icons/md";
 import BlurText from "./ui/BlurText";
 import SocialLinks from "./SocialLinks";
