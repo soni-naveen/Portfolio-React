@@ -1,10 +1,8 @@
-import React from "react";
 import Naveenphoto from "../assets/naveensoni.png";
-import Resume from "../assets/Naveen_Resume.pdf";
-import { MdOutlineFileDownload } from "react-icons/md";
 import BlurText from "./ui/BlurText";
 import SocialLinks from "./SocialLinks";
 import Animate from "./ui/Animate";
+import { HiOutlineExternalLink } from "react-icons/hi";
 
 export default function Intro() {
   return (
@@ -79,12 +77,18 @@ export default function Intro() {
           <div className="mb-7 sm:mb-10">
             <SocialLinks />
           </div>
-          <a href={Resume} target="_blank" className="flex justify-center">
+          <a
+            href="https://naveensoni.vercel.app"
+            target="_blank"
+            className="flex justify-center"
+          >
             <div className="group relative w-fit transition-transform duration-300 active:scale-95">
               <button className="relative z-10 rounded-full bg-gradient-to-br from-indigo-500 to-fuchsia-500 p-0.5 duration-300 group-hover:scale-105">
-                <p className="block rounded-full bg-slate-950 px-4 py-2 text-slate-100 duration-300 flex items-center gap-2 group-hover:bg-slate-950/50 group-hover:text-slate-50 group-active:bg-slate-950/80">
-                  <MdOutlineFileDownload className="text-gray-200 text-lg sm:text-xl md:text-2xl group-hover:text-white" />
-                  <span className="text-sm sm:text-base font-poppins">Resume</span>
+                <p className="block rounded-full bg-slate-950 px-5 py-2 text-slate-100 duration-300 flex items-center gap-2 group-hover:bg-slate-950/50 group-hover:text-slate-50 group-active:bg-slate-950/80">
+                  <span className="text-sm sm:text-base font-poppins">
+                    Visit my New Portfolio
+                  </span>
+                  <HiOutlineExternalLink className="text-gray-200 text-base sm:text-lg md:text-xl group-hover:text-white" />
                 </p>
               </button>
               <span className="pointer-events-none absolute -inset-4 z-0 transform-gpu rounded-2xl bg-gradient-to-br from-indigo-500 to-fuchsia-500 opacity-30 blur-xl transition-all duration-300 group-hover:opacity-40 group-active:opacity-50" />
