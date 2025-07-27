@@ -65,7 +65,7 @@ export default function Intro() {
             <span className="font-bold text-purple-300">NAVEEN SONI</span>{" "}
             <br />{" "}
             <BlurText
-              text="MERN Stack Developer"
+              text="Full Stack Developer"
               delay={500}
               animateBy="words"
               direction="top"
